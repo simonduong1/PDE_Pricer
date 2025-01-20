@@ -29,3 +29,18 @@ Le projet inclut des scripts Python permettant de visualiser graphiquement les r
 ```bash
 python python_scripts/Call.py
 ```
+- **Put européen :**
+```bash
+python python_scripts/Put.py
+```
+- **Call Asset-Or-Nothing :**
+```bash
+python python_scripts/AssetOrNothing.py
+```
+- **Call barrière KO :**
+```bash
+python python_scripts/Barrier_CallKO.py
+```
+
+## Structure du projet
+- src/ : Contient les fichiers sources du pricer en C++.
