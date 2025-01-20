@@ -44,3 +44,13 @@ python python_scripts/Barrier_CallKO.py
 
 ## Structure du projet
 - `src/` : Contient les fichiers sources du pricer en C++.
+- `output/` : Contient les fichiers CSV générés après l’exécution.
+- `python_scripts/` : Contient les scripts Python pour visualiser les résultats.
+- `Pricer.cpp` : Fichier principal pour exécuter le pricer.
+
+## Pré-requis
+- **C++ compiler :** g++ ou équivalent (supportant -std=c++11).
+- **Python3.x :** Avec les bibliothèques suivantes installées :
+  - `matplotlib`
+  - `numpy`
+  - `pandas`
