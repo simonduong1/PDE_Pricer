@@ -54,3 +54,10 @@ python python_scripts/Barrier_CallKO.py
   - `matplotlib`
   - `numpy`
   - `pandas`
+Vous pouvez installer ces bibliothèques via :
+```bash
+pip install matplotlib numpy pandas
+```
+
+## Auteurs
+Ce projet à été fait par 
