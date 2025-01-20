@@ -43,4 +43,4 @@ python python_scripts/Barrier_CallKO.py
 ```
 
 ## Structure du projet
-- src/ : Contient les fichiers sources du pricer en C++.
+- `src/` : Contient les fichiers sources du pricer en C++.
