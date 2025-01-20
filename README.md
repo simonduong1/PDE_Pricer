@@ -15,3 +15,17 @@ Ce projet est un **pricer** d'options financières développé en C++. Il utilis
 Pour compiler le pricer, exécutez la commande suivante dans un terminal :
 ```bash
 g++ -std=c++11 Pricer.cpp src/Payoff.cpp src/Option.cpp src/EDP.cpp src/MDF.cpp -o Pricer
+```
+### Compilation
+Pour exécuter le pricer, utilisez la commande :
+```bash
+./Pricer
+```
+Les résultats sont affichés dans le terminal et exportés sous forme de fichiers CSV dans le dossier output/. Ces fichiers contiennent les résultats pour chaque pas de temps et d’espace.
+
+## Visualisation des résultats
+Le projet inclut des scripts Python permettant de visualiser graphiquement les résultats produits par le pricer. Pour exécuter ces scripts, utilisez les commandes suivantes :
+- **Call européen :**
+```bash
+python python_scripts/Call.py
+```
