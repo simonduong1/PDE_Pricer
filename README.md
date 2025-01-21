@@ -1,63 +1,63 @@
 # PDE_Pricer
 
-Ce projet est un **pricer** d'options financières développé en C++. Il utilise la méthode des **différences finies explicites** pour résoudre des équations aux dérivées partielles (EDP) afin de calculer les prix de diverses options, notamment des options vanilla et exotiques.
+This project is an **options pricer** developed in C++. It uses the **explicit finite difference method** to solve partial differential equations (PDEs) and compute the prices of various options, including both vanilla and exotic ones.
 
-## Fonctionnalités
-- **Options vanilla :**
-  - Call européen
-  - Put européen
-- **Options exotiques :**
-  - Call Asset-Or-Nothing
-  - Call barrière knock-out (KO)
+## Features
+- **Vanilla options:**
+  - European Call
+  - European Put
+- **Exotic options:**
+  - Asset-Or-Nothing Call
+  - Barrier Knock-Out Call
 
-## Compilation et exécution
+## Compilation and Execution
 ### Compilation
-Pour compiler le pricer, exécutez la commande suivante dans un terminal :
+To compile the pricer, run the following command in your terminal:
 ```bash
 g++ -std=c++11 Pricer.cpp src/Payoff.cpp src/Option.cpp src/EDP.cpp src/MDF.cpp -o Pricer
 ```
-### Compilation
-Pour exécuter le pricer, utilisez la commande :
+### Execution
+To run the pricer, use the command:
 ```bash
 ./Pricer
 ```
-Les résultats sont affichés dans le terminal et exportés sous forme de fichiers CSV dans le dossier output/. Ces fichiers contiennent les résultats pour chaque pas de temps et d’espace.
+The results will be displayed in the terminal and also exported as CSV files in the output/ folder. These files contain the results for each time and space step.
 
-## Visualisation des résultats
-Le projet inclut des scripts Python permettant de visualiser graphiquement les résultats produits par le pricer. Pour exécuter ces scripts, utilisez les commandes suivantes :
-- **Call européen :**
+## Vizualisation of Results
+The project includes Python scripts to generate graphs from the results produced by the pricer. To run the scripts, use the following commands:
+- **European Call:**
 ```bash
 python python_scripts/Call.py
 ```
-- **Put européen :**
+- **European Put:**
 ```bash
 python python_scripts/Put.py
 ```
-- **Call Asset-Or-Nothing :**
+- **Asset-Or-Nothing Call:**
 ```bash
 python python_scripts/AssetOrNothing.py
 ```
-- **Call barrière KO :**
+- **Barrier Knock-Out Call:**
 ```bash
 python python_scripts/Barrier_CallKO.py
 ```
 
-## Structure du projet
-- `src/` : Contient les fichiers sources du pricer en C++.
-- `output/` : Contient les fichiers CSV générés après l’exécution.
-- `python_scripts/` : Contient les scripts Python pour visualiser les résultats.
-- `Pricer.cpp` : Fichier principal pour exécuter le pricer.
+## Project Structure
+- `src/` : Contains the C++ source files for the pricer.
+- `output/` : Contains the CSV files generated after execution.
+- `python_scripts/` : Contains Python scripts for visualizing the results.
+- `Pricer.cpp` : The main file to execute the pricer.
 
-## Pré-requis
-- **C++ compiler :** `g++` ou équivalent (supportant `-std=c++11`).
-- **Python3.x :** Avec les bibliothèques suivantes installées :
+## Requirements
+- **C++ compiler :** `g++` or equivalent (supporting `-std=c++11`).
+- **Python3.x :** With the following libraries installed:
   - `matplotlib`
   - `numpy`
   - `pandas`
-Vous pouvez installer ces bibliothèques via :
+You can install these libraries using:
 ```bash
 pip install matplotlib numpy pandas
 ```
 
-## Auteurs
-Ce projet à été fait par Samuel Alvarez, Simon Duong et Lucas Leproult, étudiants à l'ENSAE.
+## Authors
+This project was developed by Samuel Alvarez, Simon Duong, and Lucas Leproult, students at ENSAE.
