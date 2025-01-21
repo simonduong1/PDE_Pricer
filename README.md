@@ -60,4 +60,4 @@ pip install matplotlib numpy pandas
 ```
 
 ## Auteurs
-Ce projet à été fait par 
+Ce projet à été fait par Samuel Alvarez, Simon Duong et Lucas Leproult, étudiants à l'ENSAE.
