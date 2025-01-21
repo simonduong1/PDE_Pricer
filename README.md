@@ -49,7 +49,7 @@ python python_scripts/Barrier_CallKO.py
 - `Pricer.cpp` : Fichier principal pour exécuter le pricer.
 
 ## Pré-requis
-- **C++ compiler :** g++ ou équivalent (supportant -std=c++11).
+- **C++ compiler :** `g++` ou équivalent (supportant `-std=c++11`).
 - **Python3.x :** Avec les bibliothèques suivantes installées :
   - `matplotlib`
   - `numpy`
